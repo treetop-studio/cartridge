@@ -1,0 +1,1 @@
+export * from '@treetop-studio/cartridge/types/theme';

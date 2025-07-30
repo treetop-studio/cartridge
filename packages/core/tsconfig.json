@@ -1,0 +1,30 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "composite": true,
+    "outDir": "./dist",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@treetop-studio/cartridge": ["./src/index.ts"],
+      "@treetop-studio/cartridge/*": ["./src/*"],
+      "@treetop-studio/cartridge/components": ["./src/components/index.ts"],
+      "@treetop-studio/cartridge/components/*": ["./src/components/*"],
+      "@treetop-studio/cartridge/themes": ["./src/themes/index.ts"],
+      "@treetop-studio/cartridge/themes/*": ["./src/themes/*"],
+      "@treetop-studio/cartridge/utils": ["./src/utils/index.ts"],
+      "@treetop-studio/cartridge/utils/*": ["./src/utils/*"],
+      "@treetop-studio/cartridge/types": ["./src/types/index.ts"],
+      "@treetop-studio/cartridge/types/*": ["./src/types/*"]
+    }
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "**/*.stories.tsx",
+    "**/*.test.tsx"
+  ]
+}
